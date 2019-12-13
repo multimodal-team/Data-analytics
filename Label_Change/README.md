@@ -1,28 +1,16 @@
-# Data-Analytics
-Provide some useful tools for analizing data from charlearn NLP.
+# Discrete Label(Using Bert-model)
+This trial aims to mapping continuous label into discrete class.Used 0-4 as five label classification.All classes are 0.2 distence
+except for :  
+0.4 < label < 0.55 as class 2  
+0.55 < label < 0.7 as class 3  
 
-### 12.13 Update bugs
-The testing acc is 0.2, which means original data was wrong. 
-After debuging I found csv misunderstanded the filename which prefix is '-' as a format. When did combine operations, it throw away 50 above datas.
-
-### Raw data
-Raw data which combined everything incuding 'VideoName', 'Labels', 'context'.
-TrainSet length is 6000 and corrresponed dev is 2000.
-
-
-
-
-
+### Results
 ---
-### Second floder
-Using huber-loss
-//TO DO 12.12 due
+Evenly divide data makes result even.  
+For example, There are 35% of label 2 in DataSet. Then model **Acc is 0.38**  
+Confusely, model love predicting label 2.  
+  
+Consider the prediction of regression, model also love predicted data in range 0.4-0.6.
+That trail don't make any sence
 
-### Personality dictionary
-//TO DO 12.12 due
-Recommended to investigate the Personality dictionary which deeps in lingustic to preduce how words affect to the personality.
-The website is 
-
-#### Early fusion
-//TO DO 12.14 due
-
+12.13
