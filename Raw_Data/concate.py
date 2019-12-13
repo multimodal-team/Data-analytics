@@ -1,7 +1,7 @@
 import pandas as pd
-df1 = pd.read_csv('dev.txt',sep = '\t')
-df2 = pd.read_csv('dev.csv')
+df1 = pd.read_csv('concated_dev.txt',sep = '\t')
+df2 = pd.read_csv('dev.txt', sep = '\t')
 
-df_new = df1.merge(df2, on = 'VideoName', how = 'left')
+df_new = df2.merge(df1, on = 'VideoName')
 
-df_new.to_csv('test_new.csv',index = 0)
+df_new.to_csv('dev_combined.txt',sep = '\t', index = 0)
