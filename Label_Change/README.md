@@ -5,7 +5,6 @@ except for :
 0.55 < label < 0.7 as class 3  
 
 ### Results
----
 Evenly divide data makes result even.  
 For example, There are 35% of label 2 in DataSet. Then model **Acc is 0.38**  
 Confusely, model love predicting label 2.  
